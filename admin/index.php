@@ -37,8 +37,7 @@ include("ceklogin.php");
 			<a href="./">Home</a>
 			<a href="?mod=kategori">Kategori</a>
 			<a href="?mod=berita">Berita</a>
-			<a href="?mod=konfigurasi">Konfigurasi</a>
-			<a href="?mod=useradmin">User Admin</a>
+			
 
 			<span class="fr"><a href="?keluar=yes">Log Out</a></span>
 
@@ -56,12 +55,6 @@ include("ceklogin.php");
 		$mod = (isset($_GET['mod']) ? $_GET['mod'] : '');
 
 		switch ($mod) {
-			case 'useradmin':
-				include("useradmin.php");
-				break;
-			case 'konfigurasi':
-				include("konfigurasi.php");
-				break;
 			case 'berita':
 				include("berita.php");
 				break;
